@@ -220,40 +220,15 @@
   padding: 96px 24px;
 }
 
-.section--course .section--info-box {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
 @media (max-width: 992px) {
-  .section--course .section--info-box {
-    margin-bottom: 32px;
+  .section--course {
+    padding: 80px 24px;
   }
 }
 
-.section--course .section--title {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-@media (max-width: 992px) {
-  .section--course .section--title {
-    font-size: 30px;
-  }
-}
-
-.section--course .section--description {
-  color: var(--text-color-white-40);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.8;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 992px) {
-  .section--course .section--description {
-    font-size: 12px;
+@media (max-width: 768px) {
+  .section--course {
+    padding: 64px 24px;
   }
 }
 
@@ -278,6 +253,7 @@
 }
 
 .course--column {
+  width: 100%;
   background-color: #feeceb;
   border-radius: 5px;
   padding: 48px 24px;
@@ -292,7 +268,7 @@
 }
 
 .course--column:hover {
-  background-color: #fdd9d7;
+  background-color: #f44336;
   transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -303,6 +279,9 @@
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
+}
+.course--column:hover .course--title {
+  color: var(--text-color-white);
 }
 
 @media (max-width: 992px) {
@@ -319,7 +298,7 @@
 }
 
 .course--column:hover .course--description {
-  color: var(--text-color-white-60);
+  color: #feeceb;
 }
 
 @media (max-width: 992px) {
@@ -329,6 +308,289 @@
 }
 /* ! ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ! */
 /* ! SECTION - COURSE ! */
+
+/* ! SECTION - CAMPUS ! */
+/* ! ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ! */
+.section--campus {
+  padding: 96px 24px;
+}
+
+@media (max-width: 992px) {
+  .section--campus {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--campus {
+    padding: 64px 24px;
+  }
+}
+
+.campus--content-box {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .campus--content-box {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .campus--content-box {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.campus--col {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.campus--col img {
+  display: block;
+  width: 100%;
+}
+
+.campus--campus-name {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.campus--campus-name:hover {
+  background-color: rgba(244, 67, 54, 0.75);
+}
+
+.campus--campus-name h3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--text-color-white);
+  opacity: 0;
+}
+.campus--campus-name:hover h3 {
+  opacity: 1;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+@media (max-width: 992px) {
+  .campus--campus-name h3 {
+    font-size: 20px;
+  }
+}
+/* ! ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ! */
+/* ! SECTION - CAMPUS ! */
+
+/* ! SECTION - FACILITIES ! */
+/* ! ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ! */
+.section--facilities {
+  padding: 96px 24px;
+}
+
+@media (max-width: 992px) {
+  .section--facilities {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--facilities {
+    padding: 64px 24px;
+  }
+}
+
+.facilities--content-box {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .facilities--content-box {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .facilities--content-box {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.facilities--col {
+  flex-basis: 100%;
+}
+
+.facilities--col img {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  .facilities--col img {
+    margin-bottom: 20px;
+  }
+}
+
+.facilities--col h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color-black);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .facilities--col h3 {
+    font-size: 18px;
+  }
+}
+
+.facilities--col p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-color-white-40);
+}
+
+@media (max-width: 992px) {
+  .facilities--col p {
+    font-size: 12px;
+  }
+}
+/* ! ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ! */
+/* ! SECTION - FACILITIES ! */
+
+/* ! SECTION - TESTIMONIALS ! */
+/* ! ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ! */
+.section--testimonials {
+  padding: 96px 24px;
+}
+
+@media (max-width: 992px) {
+  .section--testimonials {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--testimonials {
+    padding: 64px 24px;
+  }
+}
+
+.testimonials--content-box {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .testimonials--content-box {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials--content-box {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.testimonials--col {
+  background-color: #feeceb;
+  flex-basis: 100%;
+  border-radius: 10px;
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 479px) {
+  .testimonials--col {
+    gap: 16px;
+  }
+}
+
+.testimonials--col img {
+  margin-left: 12px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 479px) {
+  .testimonials--col img {
+    margin-left: 0;
+  }
+}
+
+.testimonials--col p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-color-white-40);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .testimonials--col p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.testimonials--col h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color-black);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .testimonials--col h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.testimonials--col svg {
+  height: 16px;
+}
+
+@media (max-width: 992px) {
+  .testimonials--col svg {
+    height: 14px;
+  }
+}
+
+.testimonials--col svg path {
+  fill: var(--secondary-color);
+}
+/* ! ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ! */
+/* ! SECTION - TESTIMONIALS ! */
 
 /*
   SPACING SYSTEM
